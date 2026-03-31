@@ -3,9 +3,13 @@ provider "random" {
 
 }
 
+variable "num_of_pets" {
+  type = number
+  description = "how many pets do we want"
+}
 #resource block
 resource "random_pet" "name" {
-  length = 3
+  length = var.num_of_pets
 }
 
 resource "random_pet" "my_pet" {
