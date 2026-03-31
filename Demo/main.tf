@@ -5,7 +5,7 @@ provider "random" {
 
 #resource block
 resource "random_pet" "name" {
-  length = 2
+  length = 3
 }
 
 #output
